@@ -1,0 +1,57 @@
+body {
+    background-color:#0f65ba;
+}
+h1 {
+    text-align: center;
+    margin-top:  300px;
+    font-size: 50px;
+}
+h1 span:nth-child(1){
+    color:whitesmoke;
+}
+h2 {
+    text-align: center;
+}
+h2 span:nth-child(1){
+    color:whitesmoke;
+}
+img.jpg.jpg{ 
+    text-align: center;
+}
+
+nav {
+    color: yellowgreen;
+} 
+
+
+input[id="menuicon"] + label {
+    display: block;
+    width:60px;
+    height:50px;
+    position:fixed;
+    right:0;
+    top:calc(50% - 25px);
+    transition:all .35s;
+    cursor: pointer;
+}
+input[id="menuicon"]:checked + label {
+    z-index: 2;
+    right:200px;
+}
+
+div[class="sidebar"] {
+    width: 300px;
+    height: 100%;
+    background: black;
+    position: fixed;
+    top: 0;
+    right:-300px;
+    z-index: 1;
+    transition: all .35s;
+}
+input[id="menuicon"]:checked + label + div {
+    right:0;
+}
+
+
+
